@@ -1,3 +1,3 @@
-#Slack My Gif
+==Slack My Gif
 
 This web app lets you upload a normal size gif and returns a size that Slack will like!
