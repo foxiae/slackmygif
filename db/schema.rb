@@ -11,12 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160509002950) do
+ActiveRecord::Schema.define(version: 20160509005447) do
 
   create_table "images", force: :cascade do |t|
     t.string   "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.string   "gif_file_name"
+    t.string   "gif_content_type"
+    t.integer  "gif_file_size"
+    t.datetime "gif_updated_at"
   end
 
 end

@@ -1,2 +1,5 @@
 class UploaderController < ApplicationController
+
+
+
 end
