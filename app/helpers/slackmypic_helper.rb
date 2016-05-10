@@ -1,0 +1,2 @@
+module SlackmypicHelper
+end

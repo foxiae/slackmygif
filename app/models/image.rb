@@ -1,3 +1,4 @@
 class Image < ActiveRecord::Base
-  has_attached_file :gif
+  attr_accessible :gif
+  mount_uploader :gif, GifUploader
 end
