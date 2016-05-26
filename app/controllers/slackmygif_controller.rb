@@ -1,2 +1,0 @@
-class SlackmygifController < ApplicationController
-end

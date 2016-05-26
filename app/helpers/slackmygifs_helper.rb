@@ -1,0 +1,2 @@
+module SlackmygifsHelper
+end

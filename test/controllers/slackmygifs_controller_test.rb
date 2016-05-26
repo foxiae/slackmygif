@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class SlackmypicControllerTest < ActionController::TestCase
+class SlackmygifsControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end

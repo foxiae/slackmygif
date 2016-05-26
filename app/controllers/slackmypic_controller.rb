@@ -1,2 +1,0 @@
-class SlackmypicController < ApplicationController
-end

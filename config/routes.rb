@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root 'slackmygif#index'
+  root 'slackmygifs#index'
   #resources :uploader, only: [:new, :create, :index, :destroy]
 end
