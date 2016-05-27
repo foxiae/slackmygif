@@ -1,11 +1,22 @@
 class SlackmygifsController < ApplicationController
+  attr_accessor :image
+
+  def index
+    @image = Image.new
+    if @image.save
+      flash[:notice] = "Look at your resized gif!"
+    else
+      flash[:notice] = "Sorry, nothing happened"
+    end
+  end
+
   def new
-    @mygif = Image.new
+    @image = Image.new
   end
 
   def create
-    @mygif = Image.new
-    if @mygif.save
+    @image = Image.new
+    if @image.save
       flash[:notice] = "Look at your resized gif!"
     else
       flash[:notice] = "Sorry, nothing happened"
@@ -13,6 +24,6 @@ class SlackmygifsController < ApplicationController
   end
 
   def show
-    @mygifs = Image.find(params[:id])
+    @image = Image.find(params[:id])
   end
 end
